@@ -1,0 +1,54 @@
+.advantages.section
+  ._wrap.wrap
+    .section-title Наши преимущества
+    .swiper-container(data-slider="advantages")
+      .swiper-wrapper
+        .swiper-slide
+          .advantages-item
+            ._icon
+              +icon('experience')
+            ._title большой опыт
+            ._subtitle Работаем в сфере грузоперевозок более 6 лет. Знаем все тонкости и подводные камни
+
+        .swiper-slide
+          .advantages-item
+            ._icon
+              +icon('price')
+            ._title Низкие цены
+            ._subtitle За счет перевозки попутными автомобилями - сокращаем конечную стоимость перевозки
+            
+        .swiper-slide
+          .advantages-item
+            ._icon
+              +icon('complexity')
+            ._title любая сложность
+            ._subtitle Перевозим грузы любой 
+              br/ 
+              | сложности от 100 кг
+
+        .swiper-slide
+          .advantages-item
+            ._icon
+              +icon('delivery')
+            ._title Своевременность доставки
+            ._subtitle Осуществляем доставку грузов в оговоренные с клиентом сроки
+
+        .swiper-slide
+          .advantages-item
+            ._icon
+              +icon('world')
+            ._title Широкая география
+            ._subtitle Осущестялем перевозки из любого города России. Подбираем оптимальные маршуты
+
+        .swiper-slide
+          .advantages-item
+            ._icon
+              +icon('agreement')
+            ._title Выгодное сотрудничество
+            ._subtitle Индивидуальный подход к каждому клиенту. Подберем оптимальный вариант, проконсультируем по любым вопросам
+      .doted 
+      .swiper-pagination
+      .advantages-button-prev
+        +svg('arrow', 'arrow-left-advantages')
+      .advantages-button-next
+        +svg('arrow', 'arrow-right-advantages')       

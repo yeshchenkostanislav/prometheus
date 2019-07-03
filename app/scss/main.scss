@@ -22,13 +22,20 @@ a {
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
+}
+
+input {
+  outline: none;
 }
 
 button {
   font-family: $base-font;
-  &:hover{
+  outline: none;
+  transition: $t-time;
+
+  &:hover {
     cursor: pointer;
   }
 }
@@ -43,6 +50,70 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  width: 1170px;
+
+  @media (max-width: 1199px) {
+    width: 970px;
+  }
+
+  @media (max-width: 992px) {
+    width: 767px;
+  }
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+}
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154px;
+  height: 42px;
+  border-radius: 3px;
+  background-color: $red-color;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+
+  &_big {
+    width: 183px;
+    height: 50px;
+  }
+
+  &:hover {
+    background: darken($red-color, 3%);
+  }
+}
+
+.section-title {
+  position: relative;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  width: 100%;
+
+  @media(max-width: 320px) {
+    font-size: 20px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 98px;
+    height: 4px;
+    background-color: #e10503;
+    bottom: -26px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @import "icons";
+//page index
+@import "../elements/index/header/header";
+@import "../elements/index/banner/banner";
+@import "../elements/index/about-company/about-company";
+@import "../elements/index/advantages/advantages";

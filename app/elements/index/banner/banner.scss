@@ -1,0 +1,234 @@
+.banner {
+  $root: &;
+  background: #fdfdfd url(../banner/img/banner-bg.png) no-repeat right;
+  background-size: 980px 100%;
+  padding: 65px 0 130px 0;
+  margin: 2px 0 0 0;
+  position: relative;
+
+  @media(max-width: 992px) {
+    background: #f6f6f6 url(../banner/img/banner-bg2.png) no-repeat;
+    background-position: top right;
+    background-size: 100% 50%;
+    padding: 65px 0 60px 0;
+  }
+
+  @media(max-width: 540px) {
+    padding: 14px 0;
+    background-size: 100% 410px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 46%;
+    background: #fff;
+    transform: skewX(-14deg);
+
+    @media(max-width: 992px) {
+      display: none;
+    }
+
+  }
+
+  &__swiper-container {
+    width: 100%;
+  }
+
+  .banner-button-prev,
+  .banner-button-next {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 53%;
+    bottom: 0;
+    outline: none;
+    width: 75px;
+    height: 64px;
+    background-color: #f6f6f6;
+    transform: skewX(-14deg);
+
+    @media(max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .banner-button-prev {
+    left: calc(54% - 100px);
+  }
+
+  &__swiper-slide {
+    display: flex;
+    flex-direction: row;
+
+    @media(max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__descr {
+    position: relative;
+    max-width: 530px;
+    z-index: 1;
+    padding: 30px 0 0 0;
+
+    @media(max-width: 992px) {
+      padding: 0;
+      margin: 130px 0 0 0;
+      order: 2;
+    }
+
+    @media(max-width: 320px) {
+      margin: 24px 0 0 0;
+    }
+  }
+
+  &__descr-title {
+    font-size: 35px;
+    line-height: 45px;
+    position: relative;
+
+    @media(max-width: 540px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 98px;
+      height: 4px;
+      background-color: #e10503;
+      left: 0;
+      bottom: -20px;
+    }
+  }
+
+  &__text {
+    color: #5b5b5b;
+    font-size: 20px;
+    line-height: 28px;
+
+    @media(max-width: 540px) {
+      font-size: 14px;
+    }
+
+    &:first-child {
+      margin: 75px 0 0 0;
+
+      @media(max-width: 540px) {
+        margin: 30px 0 0 0;
+      }
+    }
+
+    &:not(:first-child) {
+      margin: 40px 0 50px 0;
+
+      @media(max-width: 540px) {
+        margin: 25px 0;
+      }
+    }
+  }
+
+  &__services {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 540px;
+    width: 100%;
+
+    @media(max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  &__services-item {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(50% - 50px);
+    padding: 0 0 0 40px;
+    max-width: 282px;
+    transform: skewX(-14deg);
+    width: 100%;
+    height: 227px;
+    background-color: #ffffff;
+    box-shadow: $box-shadow;
+
+    @media(max-width: 768px) {
+      flex-basis: 47%;
+      width: 138px;
+      transform: skewX(0deg);
+      padding: 0;
+    }
+
+    @media(max-width: 540px) {
+      height: 185px;
+    }
+
+    &:first-child {
+      margin: 0 0 0 59px;
+      color: #e10503;
+
+      @media(max-width: 768px) {
+        margin: 0;
+      }
+    }
+
+    &:nth-child(odd) {
+      margin-right: 15px;
+    }
+
+    &:nth-child(n+3) {
+      margin-top: 15px;
+    }
+  }
+
+  &__services-item-content {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 25px;
+    transform: skewX(14deg);
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width: 768px) {
+      font-size: 14px;
+      line-height: 20px;
+      transform: skewX(0deg);
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.btn_big-banner {
+  margin: auto;
+}
+
+.services-svg {
+  margin: 30px 0 0 0;
+}
+
+.transportation-svg {
+  margin: 30px 0 0 -10px;
+}
+
+.outsourcing-svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.warehouse-services-svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.part-svg {
+  margin: 30px 0 0 -10px;
+}

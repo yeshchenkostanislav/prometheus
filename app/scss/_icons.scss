@@ -1,13 +1,124 @@
 .icon {
   display: inline-block;
+
   &.example-png-icon {
     background: url(img/icons/example.png);
     width: 30px;
     height: 30px;
   }
+
   &-example-svg-icon {
     width: 30px;
     height: 30px;
     fill: red;
+  }
+
+  //app/elements/index/header/icons
+  &.logo {
+    background: url(img/icons/logo.png)no-repeat center/contain;
+    width: 116px;
+    height: 63px;
+  }
+
+  //app/elements/index/advantages/icons
+  &.experience {
+    background: url(img/icons/experience.png)no-repeat center/contain;
+    width: 57px;
+    height: 57px;
+  }
+
+  &.price {
+    background: url(img/icons/price.png)no-repeat center/contain;
+    width: 69px;
+    height: 61px;
+  }
+
+  &.complexity {
+    background: url(img/icons/complexity.png)no-repeat center/contain;
+    width: 80px;
+    height: 46px;
+  }
+
+  &.delivery {
+    background: url(img/icons/delivery.png)no-repeat center/contain;
+    width: 62px;
+    height: 60px;
+  }
+
+  &.world {
+    background: url(img/icons/world.png)no-repeat center/contain;
+    width: 61px;
+    height: 61px;
+  }
+
+  &.agreement {
+    background: url(img/icons/agreement.png)no-repeat center/contain;
+    width: 65px;
+    height: 57px;
+  }
+
+  //app/elements/index/banner/icons
+  &.transportation {
+    background: url(img/icons/transportation.png)no-repeat center/contain;
+    width: 129px;
+    height: 47px;
+
+    @media(max-width: 540px) {
+      width: 106px;
+      height: 37px;
+    }
+  }
+
+  &.outsourcing {
+    background: url(img/icons/outsourcing.png)no-repeat center/contain;
+    width: 64px;
+    height: 64px;
+
+    @media(max-width: 540px) {
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  &.warehouse-services {
+    background: url(img/icons/warehouse-services.png)no-repeat center/contain;
+    width: 63px;
+    height: 62px;
+
+    @media(max-width: 540px) {
+      width: 58px;
+      height: 57px;
+    }
+  }
+
+  &.part {
+    background: url(img/icons/part.png)no-repeat center/contain;
+    width: 142px;
+    height: 74px;
+
+    @media(max-width: 540px) {
+      width: 104px;
+      height: 54px;
+    }
+  }
+
+  //app/elements/index/header/svg-icons
+  &-phone {
+    width: 21px;
+    height: 21px;
+    fill: #e10503;
+  }
+
+  &-arrow {
+    width: 14px;
+    height: 14px;
+    fill: #e10503;
+  }
+
+  &-left-arrow,
+  &-right-arrow {
+    width: 24px;
+    height: 18px;
+    fill: #e10503;
   }
 }
