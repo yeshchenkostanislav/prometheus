@@ -33,6 +33,7 @@ $('document').ready(function () {
     setWrapperSize: true,
     spaceBetween: 15,
     slidesPerColumn: 2,
+    allowTouchMove: false,
     navigation: {
       nextEl: '.advantages-button-next',
       prevEl: '.advantages-button-prev'

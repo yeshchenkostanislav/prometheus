@@ -28,6 +28,7 @@ a {
 
 input {
   outline: none;
+  font-family: $base-font;
 }
 
 button {
@@ -117,3 +118,4 @@ button {
 @import "../elements/index/banner/banner";
 @import "../elements/index/about-company/about-company";
 @import "../elements/index/advantages/advantages";
+@import "../elements/index/requisition/requisition";
