@@ -64,6 +64,34 @@ $('document').ready(function () {
       prevEl: '.banner-button-prev'
     }
   });
+  var swiperFeedback = new Swiper($('[data-slider="feedback"]'), {
+    speed: 400,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    centeredSlides: true,
+    initialSlide: 2,
+    loop: true,
+    navigation: {
+      nextEl: '.feedback-button-next',
+      prevEl: '.feedback-button-prev'
+    },
+    breakpoints: {
+      540: {
+        slidesPerView: 1
+      }
+    }
+  });
+  var swiperFeedbackText = new Swiper($('[data-slider="feedback-text"]'), {
+    speed: 400,
+    spaceBetween: 10,
+    slidesPerView: 1,
+    initialSlide: 2,
+    loop: true,
+    navigation: {
+      nextEl: '.feedback-button-next',
+      prevEl: '.feedback-button-prev'
+    }
+  });
   function burgMenu() {
     // скрипт для бургер меню, отменяет стандартное действие клика по ссылке
 

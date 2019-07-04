@@ -13,6 +13,13 @@
     fill: red;
   }
 
+  //app/elements/index/feedback/icons
+  &.feedback-icon {
+    background: url(img/icons/feedback.png)no-repeat center/contain;
+    width: 55px;
+    height: 37px;
+  }
+
   //app/elements/index/header/icons
   &.logo {
     background: url(img/icons/logo.png)no-repeat center/contain;

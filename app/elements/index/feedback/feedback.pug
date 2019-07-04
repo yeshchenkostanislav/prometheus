@@ -1,0 +1,31 @@
+.feedback.section
+  ._wrap.wrap
+    .section-title Наши отзывы
+    .swiper-container(data-slider="feedback")
+      .swiper-wrapper
+        .swiper-slide
+          ._img
+            img(src="img/feedback-img.png", alt="alt")
+        .swiper-slide
+          ._img
+            img(src="img/feedback-img.png", alt="alt")
+        .swiper-slide
+          ._img
+            img(src="img/feedback-img.png", alt="alt")
+        .swiper-slide
+          ._img
+            img(src="img/feedback-img.png", alt="alt")
+
+    .feedback-button-prev
+      +svg('left-arrow')
+    .feedback-button-next
+      +svg('right-arrow')
+
+    .swiper-container(data-slider="feedback-text")
+      .swiper-wrapper
+        .swiper-slide
+          ._title
+            +icon('feedback-icon')
+            ._title-text Иван Колычев
+          ._feedback-content 
+            | Товарищи! начало повседневной работы по формированию позиции позволяет оценить значение форм развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности.
