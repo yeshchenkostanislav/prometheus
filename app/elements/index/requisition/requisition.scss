@@ -60,6 +60,23 @@
     width: 100%;
     position: relative;
 
+    &_map {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+      max-width: 530px;
+      width: 100%;
+      padding: 70px 0;
+      background-color: rgba(#000000, .16);
+      z-index: 10;
+
+      &:after {
+        display: none;
+      }
+
+    }
+
     @media(max-width: 1600px) {
       padding: 50px 0;
       border-top: 3px solid red;
@@ -124,6 +141,10 @@
 
     @media(max-width: 540px) {
       font-size: 20px;
+    }
+
+    &_map {
+      color: #fff;
     }
   }
 

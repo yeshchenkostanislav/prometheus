@@ -1,0 +1,86 @@
+.partners {
+  $root: &;
+
+  &__wrap {
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0 0 85px 0;
+
+    @media(max-width: 540px) {
+      margin: 0 0 35px 0;
+    }
+  }
+
+  &-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 35px;
+    background: #ffffff;
+    margin: auto;
+    width: 377px;
+    height: 215px;
+
+    @media(max-width: 540px) {
+      width: 320px;
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    padding: 45px 0;
+    background: #f6f6f6;
+
+    @media(max-width: 540px) {
+      padding: 15px 0;
+    }
+  }
+}
+
+[data-slider="partners"] {
+  width: 100%;
+  max-width: 1170px;
+  position: relative;
+
+  @media(max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media(max-width: 540px) {
+    width: 100%;
+  }
+}
+
+.partners-button-prev,
+.partners-button-next {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+
+  @media(max-width: 540px) {
+    background: transparent;
+  }
+}
+
+.partners-button-prev {
+  left: -35px;
+  justify-content: flex-end;
+  padding: 0 5px 0 0;
+}
+
+.partners-button-next {
+  right: -35px;
+  justify-content: flex-start;
+  padding: 0 0 0 5px;
+}

@@ -16,6 +16,8 @@ mixin head(title, description, keywords)
         link(href="css/libs.min.css" rel="stylesheet" type="text/css")
         link(href="css/style.css" rel="stylesheet" type="text/css")
         link(rel="icon" href="favicon.ico" type="image/x-icon")
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+        <script src="icon_customImage.js"></script>
 mixin svg(iconName, ...classes)
     svg(class=`icon-${iconName} ${classes}`)
         use(xlink:href=`img/elements.svg#${iconName}`)

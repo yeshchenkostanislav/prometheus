@@ -17,6 +17,8 @@
         <link href="css/libs.min.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+        <script src="icon_customImage.js"></script>
     </head>
     <body>
         <div class="header section">
@@ -213,6 +215,45 @@
                             <div class="swiper-slide__feedback-content"> Товарищи! начало повседневной работы по формированию позиции позволяет оценить значение форм развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности.</div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="partners section">
+            <div class="partners__wrap wrap">
+                <div class="partners__title section-title">Наши партнёры</div>
+                <div class="partners__slider">
+                    <div class="swiper-container" data-slider="partners">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="partners-slide"><img src="img/partners-aic.png" alt="alt"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="partners-slide"><img src="img/partners-mic.png" alt="alt"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="partners-slide"><img src="img/partners-mir.png" alt="alt"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="partners-slide"><img src="img/partners-aic.png" alt="alt"></div>
+                            </div>
+                        </div>
+                        <div class="partners-button-prev"><svg class="icon-left-arrow ">
+                                <use xlink:href="img/elements.svg#left-arrow"></use>
+                            </svg></div>
+                        <div class="partners-button-next"><svg class="icon-right-arrow ">
+                                <use xlink:href="img/elements.svg#right-arrow"></use>
+                            </svg></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map section">
+            <div class="map__wrap wrap">
+                <div id="map">
+                    <form class="requisition__form requisition__form_map" action="#" method="POST">
+                        <div class="requisition__title requisition__title_map">Оставить заявку</div><input class="requisition__input" type="text" placeholder="Введите Ваше имя"><input class="requisition__input" type="text" placeholder="Введите Ваш номер телефона"><button class="btn btn_big btn_requisition" type="submit">Оставить заявку</button>
+                    </form>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A036b70b978e9903639ce41db562ebcd738daa46eeaaef863823cb6469f6505ee&amp;width=100%25&amp;height=577&amp;lang=ru_RU&amp;scroll=false"></script>
                 </div>
             </div>
         </div>

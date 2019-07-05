@@ -1,0 +1,22 @@
+.partners.section
+  ._wrap.wrap
+    ._title.section-title Наши партнёры
+    ._slider
+      .swiper-container(data-slider="partners")
+        .swiper-wrapper
+          .swiper-slide
+            .partners-slide
+              img(src="img/partners-aic.png", alt="alt")
+          .swiper-slide
+            .partners-slide
+              img(src="img/partners-mic.png", alt="alt")
+          .swiper-slide
+            .partners-slide
+              img(src="img/partners-mir.png", alt="alt")
+          .swiper-slide
+            .partners-slide
+              img(src="img/partners-aic.png", alt="alt")
+        .partners-button-prev
+          +svg('left-arrow')
+        .partners-button-next
+          +svg('right-arrow')
